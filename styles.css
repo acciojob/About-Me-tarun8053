@@ -1,1 +1,58 @@
+.*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box
+}
+body{
+	background:aliceblue;
+	
+}
+#container{
+	height:600px;
+	width:90%;
+	background:yellow;
+	display:flex;
+	
+}
+#profile-detail{
+	display:flex;
+	padding:20px;
+}
+#profile-img{
+	height:200px;
+	width:200px;
+	
+}
+img{
+	height:100%;
+	width:100%;
+	
+}
+#profile-details{
+	height:100px;
+	width:300px;
+	background:red;
+	margin-left:16px;
+}
+.p-flex{
+	display:flex;
+	align-items:center;
+}
+ .skills {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .skill {
+      width: 100%;
+    }
+
+    .skill-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
 

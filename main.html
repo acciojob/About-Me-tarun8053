@@ -1,1 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Profile Page</title>
 
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #007bff, #00b4d8);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    section {
+      padding: 20px 40px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    section:last-child {
+      border-bottom: none;
+    }
+
+    h2 {
+      color: #007bff;
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .skills {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .skill {
+      width: 100%;
+    }
+
+    .skill-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .progress-bar {
+      width: 100%;
+      background: #e0e0e0;
+      border-radius: 10px;
+      height: 10px;
+      overflow: hidden;
+    }
+
+    .progress {
+      height: 100%;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #007bff, #00b4d8);
+    }
+
+    .badge {
+      background: #007bff;
+      color: #fff;
+      border-radius: 20px;
+      padding: 3px 10px;
+      font-size: 0.8rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #007bff;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <img src="https://via.placeholder.com/150" alt="Profile Picture">
+      <h1>Tarun Thakur</h1>
+      <p><i class="fa-solid fa-laptop-code"></i> Web Developer | Programmer</p>
+    </div>
+
+    <section id="name">
+      <h2>Name</h2>
+      <p>Tarun Thakur</p>
+    </section>
+
+    <section id="email">
+      <h2>Email</h2>
+      <p><i class="fa-solid fa-envelope"></i> tarunthakur@example.com</p>
+    </section>
+
+    <section id="profile">
+      <h2>Profile</h2>
+      <p><i class="fa-solid fa-user-tie"></i> Front-End Developer / UI Designer</p>
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <p>
+        I am a passionate front-end developer with experience in building modern, responsive, and user-friendly web applications.
+        I love transforming creative ideas into interactive experiences using HTML, CSS, JavaScript, and React.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+
+        <div class="skill">
+          <div class="skill-header">
+            <span><i class="fa-brands fa-html5"></i> HTML</span>
+            <span class="badge">95%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 95%;"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-header">
+            <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            <span class="badge">90%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-header">
+            <span><i class="fa-brands fa-square-js"></i> JavaScript</span>
+            <span class="badge">80%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%;"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-header">
+            <span><i class="fa-brands fa-react"></i> React</span>
+            <span class="badge">75%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 75%;"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2025 Tarun Thakur | All Rights Reserved
+    </footer>
+  </div>
+
+</body>
+</html>
